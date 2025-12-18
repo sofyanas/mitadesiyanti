@@ -61,9 +61,11 @@ const AboutSection = () => {
               
               <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-accent via-accent/80 to-primary p-1 shadow-2xl">
                 <div className="w-full h-full rounded-full bg-secondary flex items-center justify-center overflow-hidden">
-                  <div className="text-7xl md:text-9xl font-bold text-gradient">
-                    MD
-                  </div>
+                  <img 
+                    src="/profile-photo.jpg" 
+                    alt="Mita Desiyanti" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               
