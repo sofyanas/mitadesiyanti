@@ -93,7 +93,7 @@ const Footer = () => {
           <p className="text-white/50 text-sm flex items-center justify-center gap-1">
             © {new Date().getFullYear()} Mita Desiyanti. Made with 
             <Heart size={14} className="text-accent fill-accent" /> 
-            by <a href="https://sfyn.dev" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">sfyn.dev</a>
+            by <a href="https://sofyanasifudin.vercel.app" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">sofyan.dev</a>
           </p>
         </div>
       </div>
