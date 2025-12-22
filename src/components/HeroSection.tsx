@@ -67,13 +67,13 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-dark mb-8"
           >
             <Sparkles size={16} className="text-accent" />
-            <span className="text-primary-foreground/80 text-sm font-medium">
+            <span className="text-white/80 text-sm font-medium">
               Inovator Pembelajaran Digital
             </span>
           </motion.div>
 
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -83,7 +83,7 @@ const HeroSection = () => {
           </motion.h1>
           
           <motion.p
-            className="text-xl md:text-2xl text-primary-foreground/60 mb-12 max-w-2xl mx-auto font-light"
+            className="text-xl md:text-2xl text-white/70 mb-12 max-w-2xl mx-auto font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -127,7 +127,7 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-primary-foreground/40 cursor-pointer"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 cursor-pointer"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         onClick={scrollToAbout}
