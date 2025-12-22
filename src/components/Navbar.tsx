@@ -57,8 +57,8 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-14">
             {/* Logo */}
-            <a href="#" className={`text-2xl font-bold transition-colors ${isScrolled ? "text-gradient" : "text-primary-foreground"}`}>
-              MD
+            <a href="#" className="flex items-center">
+              <img src="/favicon.png" alt="Mita Desiyanti" className="h-10 w-10 rounded-full object-cover" />
             </a>
 
             {/* Desktop Nav */}
