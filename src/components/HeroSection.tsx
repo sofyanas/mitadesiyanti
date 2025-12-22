@@ -104,7 +104,7 @@ const HeroSection = () => {
             >
               <a href="https://mitamatematika.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <Gamepad2 size={20} className="mr-2" />
-                Permainan Edukasi
+                MitaMath EduGame
               </a>
             </Button>
             <Button

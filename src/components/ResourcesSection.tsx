@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const resources = [
   {
     icon: Gamepad2,
-    title: "Permainan Edukasi",
+    title: "MitaMath EduGame",
     description: "Game matematika interaktif hasil digitalisasi pembelajaran untuk belajar sambil bermain.",
     link: "https://mitamatematika.vercel.app/",
     gradient: "from-rose-500 to-red-600",
