@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ChevronDown, Sparkles } from "lucide-react";
+import { ChevronDown, Sparkles, Gamepad2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -98,9 +98,20 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Button
-              onClick={scrollToAbout}
+              asChild
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-10 py-7 text-lg pulse-glow transition-all duration-300 hover:scale-105 rounded-full"
+            >
+              <a href="https://mitamatematika.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <Gamepad2 size={20} className="mr-2" />
+                Permainan Edukasi
+              </a>
+            </Button>
+            <Button
+              onClick={scrollToAbout}
+              size="lg"
+              variant="outline"
+              className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 px-10 py-7 text-lg rounded-full backdrop-blur-sm"
             >
               Explore My Work
             </Button>
