@@ -110,16 +110,14 @@ const HeroSection = () => {
             <Button
               onClick={scrollToAbout}
               size="lg"
-              variant="outline"
-              className="border-white/30 text-white hover:bg-white/10 px-10 py-7 text-lg rounded-full backdrop-blur-sm"
+              className="bg-slate-800 text-white hover:bg-slate-700 px-10 py-7 text-lg rounded-full backdrop-blur-sm font-semibold"
             >
               Explore My Work
             </Button>
             <Button
-              variant="outline"
               size="lg"
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-white/30 text-white hover:bg-white/10 px-10 py-7 text-lg rounded-full backdrop-blur-sm"
+              className="bg-slate-800 text-white hover:bg-slate-700 px-10 py-7 text-lg rounded-full backdrop-blur-sm font-semibold"
             >
               Hubungi Saya
             </Button>
