@@ -111,7 +111,7 @@ const HeroSection = () => {
               onClick={scrollToAbout}
               size="lg"
               variant="outline"
-              className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 px-10 py-7 text-lg rounded-full backdrop-blur-sm"
+              className="border-white/30 text-white hover:bg-white/10 px-10 py-7 text-lg rounded-full backdrop-blur-sm"
             >
               Explore My Work
             </Button>
@@ -119,7 +119,7 @@ const HeroSection = () => {
               variant="outline"
               size="lg"
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 px-10 py-7 text-lg rounded-full backdrop-blur-sm"
+              className="border-white/30 text-white hover:bg-white/10 px-10 py-7 text-lg rounded-full backdrop-blur-sm"
             >
               Hubungi Saya
             </Button>

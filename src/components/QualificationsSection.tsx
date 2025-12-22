@@ -5,8 +5,7 @@ import { Badge } from "@/components/ui/badge";
 const certifications = [
   { label: "Certified Math Educator", gradient: "from-amber-500 to-orange-600" },
   { label: "Digital Learning Specialist", gradient: "from-blue-500 to-indigo-600" },
-  { label: "Kurikulum Merdeka Certified", gradient: "from-purple-500 to-pink-600" },
-  { label: "Google Certified Educator", gradient: "from-emerald-500 to-teal-600" }
+  { label: "Kurikulum Merdeka Certified", gradient: "from-purple-500 to-pink-600" }
 ];
 
 const skills = [
