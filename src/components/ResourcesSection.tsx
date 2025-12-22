@@ -1,8 +1,16 @@
 import { motion } from "framer-motion";
-import { FileQuestion, Video, FileText, BookOpen, Download, ExternalLink } from "lucide-react";
+import { FileQuestion, Video, FileText, BookOpen, Download, ExternalLink, Gamepad2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const resources = [
+  {
+    icon: Gamepad2,
+    title: "Permainan Edukasi",
+    description: "Game matematika interaktif hasil digitalisasi pembelajaran untuk belajar sambil bermain.",
+    link: "https://mitamatematika.vercel.app/",
+    gradient: "from-rose-500 to-red-600",
+    isExternal: true
+  },
   {
     icon: FileQuestion,
     title: "Interactive Quizzes",
@@ -86,17 +94,32 @@ const ResourcesSection = () => {
                 </p>
 
                 <div className="flex gap-2 mt-auto">
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="flex-1 group-hover:bg-accent group-hover:text-accent-foreground group-hover:border-accent transition-all duration-300 rounded-full"
-                  >
-                    <Download size={16} className="mr-2" />
-                    Download
-                  </Button>
-                  <Button variant="ghost" size="icon" className="shrink-0 rounded-full hover:bg-accent/10">
-                    <ExternalLink size={16} />
-                  </Button>
+                  {resource.isExternal ? (
+                    <Button 
+                      asChild
+                      size="sm"
+                      className="flex-1 bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 rounded-full"
+                    >
+                      <a href={resource.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink size={16} className="mr-2" />
+                        Mainkan
+                      </a>
+                    </Button>
+                  ) : (
+                    <>
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        className="flex-1 group-hover:bg-accent group-hover:text-accent-foreground group-hover:border-accent transition-all duration-300 rounded-full"
+                      >
+                        <Download size={16} className="mr-2" />
+                        Download
+                      </Button>
+                      <Button variant="ghost" size="icon" className="shrink-0 rounded-full hover:bg-accent/10">
+                        <ExternalLink size={16} />
+                      </Button>
+                    </>
+                  )}
                 </div>
               </div>
             </motion.div>
